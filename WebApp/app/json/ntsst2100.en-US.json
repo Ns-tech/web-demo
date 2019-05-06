@@ -1,0 +1,23 @@
+﻿{
+  "firstname&lastname": "FirstName & LastName",
+  "aliass": "Aliass",
+  "username": "Username",
+  "dateofbirth": "Date of birth",
+  "emailisinvalid!": "Email is invalid !",
+  "role": "Role",
+  "description": "Description",
+  "assistantname": "Assistant name",
+  "phonenumber": "Phonenumber",
+  "groupuser": "Group user",
+  "doctor": "Doctor",
+  "numberoftechnicians": "Number of technicians",
+  "total": "Total",
+  "groupfunction": "Group function",
+  "function": "Function",
+  "selected": "Selected",
+  "groupfunctioncode/functioncode": "Groupfunction code / Function code",
+  "groupfunctionname/functionname": "Groupfunction name / Function name",
+  "edit": "Edit",
+  "re-new": "Re-new",
+  "close": "Close"
+}

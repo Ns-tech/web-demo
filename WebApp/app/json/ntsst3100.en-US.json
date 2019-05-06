@@ -1,0 +1,12 @@
+﻿{
+  "groupname": "GroupName",
+  "description": "Description",
+  "use": "Use",
+  "groupfunctioncode/functioncode": "Groupfunction code / Function code",
+  "groupfunctionname/functionname": "Groupfunction name / Function name",
+  "edit": "Edit",
+  "re-new": "Re-new",
+  "close": "Close",
+  "select": "Select"
+
+}

@@ -1,0 +1,44 @@
+﻿<!-- list -->
+<ul class="wraplist wrapper-menu margin-top-20">
+    <li ui-sref-active="active">
+        <a ui-sref="app.home" class="nosub">
+            <i class="material-icons">home</i>
+            <span class="title">Trang chủ</span>
+        </a>
+    </li>
+   
+    <li href class="auto">
+        <a href="javascript:;">
+            <i class="material-icons">account_circle</i>
+            <span class="title">Hệ thống</span>
+            <span class="arrow material-icons">keyboard_arrow_right</span>
+        </a>
+        <ul class="wraplist wraplist-sub sub-menu dk"> 
+            <li ui-sref-active="active">
+                <a ui-sref="app.system.group">Nhóm người dùng</a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.system.users">Người dùng</a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.system.userhistory">Lịch sử sử dụng</a>
+            </li>           
+        </ul>
+    </li>
+    <li href class="auto">
+        <a href="javascript:;">
+            <i class="material-icons">settings</i>
+            <span class="title">Cấu hình</span>
+            <span class="arrow material-icons">keyboard_arrow_right</span>
+        </a>
+        <ul class="wraplist wraplist-sub sub-menu dk">
+            <li ui-sref-active="active">
+                <a ui-sref="app.config.vehicle">Home info</a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="app.config.position">Vị trí</a>
+            </li>           
+        </ul>
+    </li>
+</ul>
+<!-- / list -->

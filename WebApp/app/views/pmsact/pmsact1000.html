@@ -1,0 +1,104 @@
+﻿<div class='content-wrapper' ng-init="app.settings.pagetitle = 'Khách hàng'; ">
+    <section class="box box-head">
+        <header class="panel_header panel_header_body">
+            <h2 class="title pull-left">Tìm kiếm</h2>
+            <div class="actions panel_actions pull-right">
+                <i class="box_toggle material-icons">expand_more</i>
+            </div>
+        </header>
+        <div class="content-body padding-15">
+            <div class="row">
+                <form name="searchForm">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="form-label">Nội dung tìm kiếm</label>
+                            <div class="controls">
+                                <input type="text" class="form-control" data-ng-model="vm.Model.Search">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 text-right margin-top-20">
+                        <button class="btn btn-success btn-success-system" ng-click="vm.FnSearch()"><i class="fa fa-search"></i> &nbsp;Tìm kiếm</button>
+                        <button class="btn btn-default btn-default-system" ng-click="vm.FnClear()"><i class="fa fa-refresh"></i> &nbsp;Làm mới</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="box ">
+        <header class="panel_header panel_header_body">
+            <h2 class="title pull-left div-system">Kết quả tìm kiếm</h2>
+            <div class="actions panel_actions pull-right">
+                <i class="box_toggle material-icons">expand_more</i>
+            </div>
+        </header>
+
+        <div class="content-body padding-15">
+            <div class="row margin-bottom-10">
+                <div class="col-md-6 text-left">
+                    <label class="form-label form-label-edited" style="line-height:35px;">Tổng số <span class="bold text-danger">{{totalItems}}</span> khách hàng</label>
+                </div>
+                <div class="col-md-6 text-right">
+                    <button type="button" class="btn btn-success" uib-tooltip="Thêm mới" ng-click="vm.FnShowCreateUpdate()">
+                        <span class="glyphicon glyphicon-plus mc-btn-icon" aria-hidden="true"></span>
+                        Thêm mới khách hàng
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th width="50px" class="text-center">STT</th>
+                                <th>Tên khách hàng</th>
+                                <th width="100px">Ngày sinh</th>
+                                <th width="120px">SĐT</th>
+                                <th width="200px">Email</th>
+                                <th width="200px">Thông tin xe</th>
+                                <th width="120px">Xử lý</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="row in vm.ListData">
+                                <td class="text-center">{{row.index}}</td>
+                                <td><a ng-click='vm.FnShowCreateUpdate(row.CustomerId)'>{{row.CustomerName}}</a></td>
+                                <td width="100px">{{row.DateOfBirth | date: 'dd/MM/yyyy'}}</td>
+                                <td width="120px">{{row.PhoneNumber}}</td>
+                                <td width="200px">{{row.Email}}</td>
+                                <td width="200px" >
+                                    <table class="mcrp6000-table-product">
+                                        <tbody>
+                                            <tr ng-repeat="vehicle in row.listPersonalVehicle">
+                                                <td>{{vehicle.PlateNumber}}</td>
+                                                <td> ({{vehicle.VehicleName}})</td>
+                                            </tr>
+                                            <tr ng-if="row.listPersonalVehicle.length==0">
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td width="120px" style="text-align:center">
+                                    <button type="button" ng-click='vm.FnShowCreateUpdate(row.CustomerId)' class="btn  btn-sm btn-warning" tooltip-placement="bottom" uib-tooltip="Cập nhật" tooltip-class="animated fadeIn">
+                                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                    </button>
+                                    <button type="button" ng-click="vm.FnDelete(row.CustomerId)" class="btn  btn-sm btn-danger" tooltip-placement="bottom" uib-tooltip="Xóa" tooltip-class="animated fadeIn">
+                                        <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                        <uib-pagination total-items="totalItems" ng-model="currentPage" max-size="maxSize" ng-change="vm.FnSearch()" class="pagination-sm" boundary-links="true" items-per-page="numPerPage"></uib-pagination>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

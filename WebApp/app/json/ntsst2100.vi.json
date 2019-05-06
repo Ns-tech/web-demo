@@ -1,0 +1,23 @@
+﻿{
+  "firstname&lastname": "Họ & tên",
+  "aliass": "Tên hay gọi",
+  "username": "Tên đăng nhập",
+  "dateofbirth": "Ngày sinh",
+  "emailisinvalid!": "Email không đúng định dạng!",
+  "role": "Vai trò",
+  "description": "Ghi chú",
+  "assistantname": "Tên trợ lý",
+  "phonenumber": "Điện thoại",
+  "groupuser": "Nhóm người dùng",
+  "doctor": "Bác sĩ",
+  "numberoftechnicians": "Số KTV",
+  "total": "Tổng số",
+  "groupfunction": "nhóm quyền",
+  "function": "quyền",
+  "selected": "Đã chọn ",
+  "groupfunctioncode/functioncode": "Mã nhóm quyền / Mã quyền",
+  "groupfunctionname/functionname": "Tên nhóm quyền / Tên quyền",
+  "edit": "Sửa",
+  "re-new": "Làm mới",
+  "close": "Thoát"
+}

@@ -1,0 +1,21 @@
+﻿<div>
+    <div class="row">
+        <div class="col-md-12">
+            <button type="button" class="btn" data-ng-click="UndoDraw()" ng-disabled="ListUndo.length<=0">
+                <i class="fa fa-rotate-left"></i> &nbsp;<span>Undo</span>
+            </button>
+            <button type="button" class="btn" data-ng-click="RedoDraw()" ng-disabled="ListRedo.length<=0">
+                <i class="fa fa-rotate-right"></i> &nbsp;<span>Redo</span>
+            </button>
+            <button type="button" class="btn" data-ng-click="ResetDraw()" >
+                <i class="fa fa-refresh"></i> &nbsp;<span>Reset</span>
+            </button>
+        </div>
+    </div>
+    <div class="row padding-top-10">
+        <div class="col-md-12">
+            <canvas width="453" height="302" id="drawing" style="cursor: url(/img/cursor-pencil.png) 0 11, default;"></canvas>
+        </div>
+
+    </div>
+</div>

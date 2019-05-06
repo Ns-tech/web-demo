@@ -1,0 +1,27 @@
+﻿<style type="text/css">
+    .app-modal-window-select-confirm .modal-dialog {
+        width: 500px;
+    }
+</style>
+<div class="modal-header">
+    <h3 class="modal-title text-orange text-uppercase">Nhập nội dung ghi chú</h3>
+</div>
+<div class="modal-body">
+    <form name="confirmForm ">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label class="form-label">Chi chú</label>
+                    <div class="controls">
+                        <textarea style="margin: 0px; width: 100%; height: 120px;" data-ng-model="vmModal.Note.Content" maxlength="500" required></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="vmModal.ok()" ng-disabled="confirmForm.$invalid">Lưu</button>
+    <button class="btn btn-default" ng-click="vmModal.cancel()">Thoát</button>
+</div>

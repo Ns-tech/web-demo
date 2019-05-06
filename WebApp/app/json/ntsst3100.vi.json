@@ -1,0 +1,12 @@
+﻿{
+  "groupname": "Tên nhóm",
+  "description": "Mô tả",
+  "use": "Sử dụng",
+  "groupfunctioncode/functioncode": "Mã nhóm quyền/Mã quyền",
+  "groupfunctionname/functionname": "Tên nhóm quyền/Tên quyền",
+  "edit": "Sửa",
+  "re-new": "Làm mới",
+  "close": "Thoát",
+  "select": "Chọn"
+
+}

@@ -1,0 +1,7 @@
+﻿<div>
+    <perfect-scrollbar id="basic-service" wheel-propagation="true" use-both-wheel-axes="true" min-scrollbar-length="20" include-padding="true" class='ps-project-tasks mc-scroll' style="height:150px; width:100%;">
+        <div ng-repeat="bank in ListBank" class="mc-logo-bank" ng-click="ChooseCard(bank.ID)" ng-class="{'active':modelCardId==bank.ID}">
+            <img ng-src="{{bank.Url}}" />
+        </div>
+    </perfect-scrollbar>
+</div>

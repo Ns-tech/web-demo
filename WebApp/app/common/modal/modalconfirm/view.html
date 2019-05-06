@@ -1,0 +1,23 @@
+﻿<style type="text/css">
+    .app-modal-window-select-confirm {
+        z-index: 20000 !important;
+    }
+</style>
+
+<div class="modal-header">
+    <h3 class="modal-title text-orange text-uppercase">Thông báo</h3>
+</div>
+<div class="modal-body">
+    <div class="row margin-bottom-15 bg-white">
+        <div class="col-md-2">
+            <span class="glyphicon glyphicon-question-sign text-primary" style="font-size:46px"></span> 
+        </div>
+        <div class="col-md-10">
+            <div class="margin-top-10">{{vmModal.MessageContent.Content}}</div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button class="btn btn-primary" ng-click="vmModal.ok()">Đồng ý</button>
+    <button class="btn btn-default" ng-click="vmModal.cancel()">Không</button>
+</div>

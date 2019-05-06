@@ -1,0 +1,16 @@
+﻿{
+  "user": "User",
+  "workschedule": "Work schedule",
+  "service": "Service",
+  "product": "Product",
+  "voucher": "Voucher",
+  "floor": "Floor",
+  "family": "Family",
+  "source": "Source",
+  "job": "Job",
+  "flow": "Flow",
+  "group": "Group",
+  "sick": "Sick",
+  "promotion": "Promotion"
+
+}

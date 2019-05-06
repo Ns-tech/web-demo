@@ -1,0 +1,59 @@
+﻿<!-- START TOPBAR -->
+<div class='logo-area'>
+    <a ui-sref="app.home">
+        <img src="img/logotp.png" class="img-responsive" />
+    </a>
+</div>
+<div class='quick-area'>
+    <div class='pull-left slantit'>
+        <ul class="info-menu left-links list-inline list-unstyled">
+            <li class="sidebar-toggle-wrap">
+                <a href="javascript:;" data-toggle="sidebar" class="sidebar_toggle" ng-click="app.settings.menuFolded = !app.settings.menuFolded; menuChatToggle('menu',app.settings.menuFolded) ">
+                    <i class="material-icons">menu</i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="pull-left pagetitle">
+        <h1 class="softwarename">Angularjs</h1>
+        <h1 class="functionname">{{app.settings.pagetitle}}</h1>
+    </div>    
+    <div class='pull-right quickright'>
+        <ul class="info-menu right-links list-inline list-unstyled">
+
+            <li class="dropdown profile tab" uib-dropdown>
+                <a href="javascript:;" class="dropdown-toggle toggle" uib-dropdown-toggle>
+                    <img src="img/profile.png" alt="user-image" class="img-circle img-inline">
+                  
+                    <span class="profile-status available"></span>
+
+                    <!-- <span class='hidden-sm hidden-md hidden-xs'>John Carter </span>  -->
+                    <!-- <i class="material-icons hidden-md hidden-sm hidden-xs">expand_more</i> -->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right profile animated fadeIn">
+                    <li>
+                        <a ui-sref="app.dashboard">
+                            <i class="material-icons">settings</i> Tùy chỉnh
+                        </a>
+                    </li>
+                    <li>
+                        <a ui-sref="app.ui.profile">
+                            <i class="material-icons">person</i> Thông tin tài khoản
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;" ng-click="FnChangePassword()">
+                            <i class="material-icons">account_box</i> Đổi mật khẩu
+                        </a>
+                    </li>
+                    <li class="last">
+                        <a ui-sref="login">
+                            <i class="material-icons">lock</i> Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </li>           
+        </ul>
+    </div>
+</div>
+<!-- END TOPBAR -->

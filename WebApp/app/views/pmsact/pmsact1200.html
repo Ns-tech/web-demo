@@ -1,0 +1,99 @@
+﻿<!--
+<copyright company="nhantinsoft.vn">
+Author: Lưu Đức Thành
+Created Date: 21/09/2016 23:48
+</copyright>
+-->
+<style type="text/css">
+    .modal-pmsact1200 {
+        z-index: 12000 !important;
+    }
+
+        .modal-pmsact1200 .modal-dialog {
+            width: 800px;
+            min-height: 600px;
+            overflow: auto;
+        }
+
+    .row-selected {
+        background-color: lightblue;
+    }
+
+    .checkbox {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+</style>
+<div class="modal-header">
+    <h3 class="modal-title text-danger text-uppercase">
+        Chọn khách hàng
+    </h3>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <form class="form-inline" ng-submit="vmModal.FnGetCustomers()">
+                <div class="form-group">
+                    <label for="service">
+                        Nội dung tìm kiếm
+                    </label>
+                    <input type="text" class="form-control" data-ng-model="vmModal.Model.Search">
+                </div>
+                <button type="submit" class="btn btn-primary padding-left-20">
+                    <i class="fa fa-search"></i> &nbsp;<span>
+                        Tìm kiếm
+                    </span>
+                </button>
+            </form>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <div style="overflow:auto; width:100%;height:350px;margin-top:15px;">
+                <table class="table table-bordered" style="table-layout:fixed;">
+                    <thead>
+                        <tr>
+                            <th width="50px" class="text-center">
+                                Chọn
+                            </th>
+                            <th width="100px">
+                                Tên khách hàng
+                            </th>
+                            <th width="80px">
+                                Ngày sinh
+                            </th>
+                            <th width="100px">
+                                Số điện thoại
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="row in vmModal.ListCustomer" ng-click="vmModal.FnCheckRowEvent($index)" ng-class="{'row-selected': vmModal.IndexSelected === $index}">
+                            <td class="text-center">
+                                <div class="checkbox">
+                                    <label class="icheck form-label">
+                                        <input type="checkbox" ng-model="row.Checked" readonly />
+                                        <i></i>
+                                    </label>
+                                </div>
+                            </td>
+                            <td width="100px">{{row.CustomerName}}</td>
+                            <td width="80px">{{row.DateOfBirth | date: 'dd/MM/yyyy'}}</td>
+                            <td width="80px">{{row.PhoneNumber}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-primary" data-ng-click="vmModal.FnChoose()">
+        <i class="fa fa-check"></i> &nbsp;<span>
+            Chọn
+        </span>
+    </button>
+    <button type="button" class="btn btn-danger" data-ng-click="vmModal.FnClose()">
+        <i class="fa fa-close"></i> &nbsp;<span>
+            Đóng
+        </span>
+    </button>
+</div>

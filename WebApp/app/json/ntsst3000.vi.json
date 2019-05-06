@@ -1,0 +1,15 @@
+﻿{
+  "groupname": "Tên nhóm",
+"in-using": "Sử dụng",
+"search": "Tìm kiếm ",
+"re-new": "Làm mới",
+"result": "Kết quả tìm kiếm",
+"total": "Tổng số ",
+"index": "Số thứ tự",
+"description": "Mô tả",
+"status": "Trạng thái",
+  "actions": "Xử lý",
+  "group": " Nhóm",
+  "addnewgroup": "Thêm mới nhóm"
+
+}

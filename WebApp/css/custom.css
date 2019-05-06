@@ -1,0 +1,502 @@
+﻿.content-wrapper {
+    padding-top: 10px !important;
+}
+
+.border-img {
+    border-radius: 3px;
+}
+/*----------------------------------------
+   map
+------------------------------------------*/
+.gm-style-iw > div {
+    overflow: hidden !important;
+    max-width: 310px !important;
+}
+
+.header-bg {
+    background-image: url(../img/header.png);
+    height: 120px;
+    background-repeat: repeat-x;
+    margin-top: 2px;
+}
+
+.badge {
+    border-radius: 50% !important;
+}
+
+.icon-bottom {
+    position: absolute;
+    bottom: -43px;
+    left: -25px;
+    transform: rotate(90deg);
+    font-size: 18px;
+}
+/*--------------*/
+.table > thead > tr > td, .table > tbody > tr > td {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer !important;
+}
+
+.bg-avata {
+    position: absolute;
+    z-index: 10;
+}
+
+    .bg-avata .actions {
+        cursor: pointer;
+    }
+
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 25px;
+    height: 24px;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: pointer;
+    display: block;
+}
+
+.btn-view {
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    cursor: default;
+}
+
+    .btn-view .fa {
+        font-size: 10px;
+        vertical-align: top;
+        padding-top: 3px;
+    }
+
+.h4-cus {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.disabled {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+a:hover {
+    cursor: pointer !important;
+}
+
+.pmsast2100-checkbox {
+    margin-top: 0px;
+}
+
+.currency-label label {
+    float: right;
+}
+
+
+/*----------------------------------------
+   Progressbar 
+------------------------------------------*/
+#loading {
+    /*background-color: #df5a49;*/
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1000012;
+    margin-top: 0px;
+    top: 0px;
+}
+
+#loading-center {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#loading-center-absolute {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 200px;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+
+.object {
+    -moz-border-radius: 50% 50% 50% 50%;
+    -webkit-border-radius: 50% 50% 50% 50%;
+    border-radius: 50% 50% 50% 50%;
+    position: absolute;
+    border-left: 5px solid #8BA121;
+    border-right: 5px solid #8BA121;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    -webkit-animation: animate 2s infinite;
+    animation: animate 2s infinite;
+}
+
+#object_one {
+    left: 75px;
+    top: 75px;
+    width: 50px;
+    height: 50px;
+}
+
+#object_two {
+    left: 65px;
+    top: 65px;
+    width: 70px;
+    height: 70px;
+    -webkit-animation-delay: 0.1s;
+    animation-delay: 0.1s;
+}
+
+#object_three {
+    left: 55px;
+    top: 55px;
+    width: 90px;
+    height: 90px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+#object_four {
+    left: 45px;
+    top: 45px;
+    width: 110px;
+    height: 110px;
+    -webkit-animation-delay: 0.3s;
+    animation-delay: 0.3s;
+}
+
+@-webkit-keyframes animate {
+
+    50% {
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes animate {
+
+    50% {
+        -ms-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+
+    100% {
+        -ms-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.blockUI.blockOverlay {
+    z-index: 1000000 !important;
+}
+
+.blockUI.blockMsg.blockPage {
+    z-index: 1000011 !important;
+}
+
+/*----------------------------------------
+   Progressbar 
+------------------------------------------*/
+.full-width {
+    width: 100%;
+}
+
+.groupfunction_list {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*----------------------------------------
+   PMSABK2000 
+------------------------------------------*/
+
+.pmsabk2000-table > thead > tr > th {
+    padding: 8px;
+}
+
+/*----------------------------------------
+   End PMSABK2000 
+------------------------------------------*/
+
+/*----------------------------------------
+   Custom navigation
+------------------------------------------*/
+
+@media (min-width: 992px) {
+    .softwarename {
+        padding-top: 0px !important;
+        background-color: #EE2D36 !important;
+        font-size: 22px !important;
+        color: #fff9ff !important;
+        padding-left: 36px !important;
+    }
+
+        .softwarename:before {
+            height: 30px !important;
+            left: -25px !important;
+            background-color: #EE2D36 !important;
+        }
+
+        .softwarename:after {
+            height: 30px !important;
+            background-color: #EE2D36 !important;
+            font-size: 15px !important;
+            color: #444444 !important;
+        }
+
+    .functionname {
+        width: 800px;
+        padding-top: 0px !important;
+        font-size: 18px !important;
+        color: #0056AC !important;
+        padding-left: 50px !important;
+        line-height: 30px !important;
+        width: 100%;
+        float: left;
+        z-index: 5;
+        background-color: #FFF !important;
+    }
+
+        .functionname:before {
+            height: 30px !important;
+            left: -8px !important;
+            background-color: #FFF !important;
+        }
+
+        .functionname:after {
+            height: 30px !important;
+            background-color: #FFF !important;
+            width: 50% !important;
+        }
+
+    .page-topbar .quick-area .pagetitle h1 {
+        width: 600px;
+    }
+
+    .slantit {
+        width: 80px;
+    }
+}
+
+.page-topbar.sidebar_shift {
+    /*/*padding-left: 60px;*/ */;
+}
+
+    .page-topbar.sidebar_shift .logo-area {
+        background-color: transparent;
+        padding-top: 25px;
+    }
+
+    .page-topbar.sidebar_shift .quick-area {
+        margin-left: 60px;
+    }
+
+.page-topbar .quick-area .info-menu li a.sidebar_toggle {
+    color: #ffffff;
+}
+
+.page-topbar {
+    background-color: transparent;
+    /*padding-left: 200px;*/
+}
+
+    .page-topbar .logo-area {
+        background-color: transparent;
+    }
+
+    .page-topbar .quick-area {
+        background-color: #EE2D36;
+        min-height: 60px;
+        margin-left: 200px;
+    }
+
+        .page-topbar .quick-area .slantit .info-menu {
+            background-color: #FFF;
+        }
+
+        .page-topbar .quick-area .info-menu li a.sidebar_toggle {
+            color: #0056AC;
+        }
+
+.datepicker-week {
+    color: transparent;
+}
+
+.datepicker-week-content {
+    margin-top: -32px;
+}
+
+.nts-datepicker-week .uib-daypicker tbody tr:hover {
+    background-color: #BDBDBD;
+}
+
+    .nts-datepicker-week .uib-daypicker tbody tr:hover td > button {
+        background-color: #BDBDBD;
+    }
+
+.custom-marker {
+    padding: 10px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: #7F7F7F solid 1px;
+    text-align: center;
+}
+
+    .custom-marker:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 7px 6px 0;
+        border-color: #fff transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        margin-left: -6px;
+        bottom: -6px;
+        left: 50%;
+    }
+
+    .custom-marker:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 7px 6px 0;
+        border-color: #7F7F7F transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        margin-left: -6px;
+        bottom: -7px;
+        left: 50%;
+    }
+
+/*----------------------------------------
+   End custom navigation
+------------------------------------------*/
+
+
+/*----------------------------------------
+  Menu left
+------------------------------------------*/
+
+#main-menu-wrapper li a .title {
+    display: inline-block;
+    line-height: 23px;
+    float: left;
+    margin-left: 15px;
+}
+
+#main-menu-wrapper li a .arrow {
+    float: none;
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    margin-right: 5px;
+    color: #F5F5F5;
+}
+
+#main-menu-wrapper li a i, .page-sidebar.collapseit #main-menu-wrapper .wraplist li .material-icons {
+    float: left;
+    display: inline-block;
+    font-size: 27px;
+    width: auto;
+    margin-left: 15px;
+}
+
+#main-menu-wrapper li.active a i {
+    margin-left: 15px;
+    font-size: 27px;
+}
+
+#main-menu-wrapper li ul.sub-menu {
+    padding-left: 10px !important;
+}
+
+#main-menu-wrapper li.active a.nosub i {
+    float: left;
+    display: inline-block;
+    font-size: 27px;
+    width: auto;
+    margin-left: 15px;
+}
+
+#main-menu-wrapper li.active a.nosub .title {
+    display: inline-block;
+    line-height: 23px;
+    float: left;
+    margin-left: 15px;
+}
+
+#main-menu-wrapper li a {
+    color: #F5F5F5 !important;
+}
+
+    #main-menu-wrapper li a .badge-accent {
+        float: none;
+        position: absolute;
+        top: 13px;
+        right: 0px;
+        margin-right: 10px;
+    }
+
+.page-sidebar {
+    background-repeat: no-repeat;
+    background-image: url(../img/opacity30-01.png),linear-gradient( #008fc8 0%,#130656 100%);
+    background-blend-mode: overlay;
+    margin-top: 0px;
+}
+
+.logo-area {
+    padding: 10px;
+    height: 60px;
+}
+
+
+#main-menu-wrapper li a:hover, #main-menu-wrapper li.active a {
+    background-color: rgba(244,244,244,0.35);
+}
+
+#main-menu-wrapper li.active ul {
+    background-color: rgba(244,244,244,0.35);
+}
+
+#main-menu-wrapper li.active .sub-menu .active a, #main-menu-wrapper li.active .sub-menu .active .sub-menu .active a, #main-menu-wrapper li.active .sub-menu .active .sub-menu a:hover, #main-menu-wrapper li.active .sub-menu a.active, #main-menu-wrapper li.active .sub-menu a:hover, #main-menu-wrapper li .sub-menu a:hover {
+    background-color: rgba(244,244,244,0.40);
+}
+
+.page-sidebar.collapseit #main-menu-wrapper .wraplist .wraplist-sub {
+    background-color: rgba(38,50,56,0.5);
+}
+
+.page-sidebar.collapseit #main-menu-wrapper .wraplist li.active a {
+    background-color: rgba(38,50,56,0.8);
+}
+/*----------------------------------------
+  End Menu left
+------------------------------------------*/
